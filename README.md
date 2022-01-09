@@ -34,12 +34,12 @@ fetch_dependency(example
 
 ## Custom CMake Modules
 ### Dependencies.cmake
-### fetch_dependency
+#### fetch_dependency
 Actions:
 * Fetches a dependency and populates it.
 * Includes dependency's include directory in compilation.
 * Links project against dependency.
 
 Arguments:
-Every argument acceptable by FetchContent_Declare.
-For more information, checkout CMake's FetchContent_Declare docs.
+  Every argument acceptable by FetchContent_Declare.
+  For more information, checkout CMake's FetchContent_Declare docs.
