@@ -7,25 +7,12 @@ C++ multi-purpose project template.
 * Delete this README.md.
 
 # Structure
-## bin
-Generated folder containing output binaries categorized by platform and build type.
-
-## build
-CMake-generated folder containing generated build files.
-
-## dependencies
-Folder containing dependencies-fetching cmake files.
-On configure, every .cmake file in the folder gets included by the main CMakeLists.txt.
-
-## include
-Folder containing public headers.
-
-## src
-Folder containing source files.
-
-## tools
-Folder containing categorized folders of tools used by the project.
-For example: tools/cmake is a folder used for storing custom CMake Modules.
+* bin - Generated folder containing output binaries categorized by platform and build type.
+* build - CMake-generated folder containing generated build files.
+* dependencies - Folder containing dependencies-fetching cmake files. On configure, every .cmake file in the folder gets included by the main CMakeLists.txt.
+* include - Folder containing public headers.
+* src -Folder containing source files.
+* tools - Folder containing categorized folders of tools used by the project. For example: tools/cmake is a folder used for storing custom CMake Modules.
 
 # Usage
 ## Dependencies
@@ -50,10 +37,10 @@ fetch_dependency(example
 ## Dependencies.cmake
 ### fetch_dependency
 Actions:
-    * Fetches a dependency and populates it.
-    * Includes dependency's include directory in compilation.
-    * Links project against dependency.
+* Fetches a dependency and populates it.
+* Includes dependency's include directory in compilation.
+* Links project against dependency.
 
 Arguments:
-    Every argument acceptable by FetchContent_Declare.
-    For more information, checkout CMake's FetchContent_Declare docs.
+Every argument acceptable by FetchContent_Declare.
+For more information, checkout CMake's FetchContent_Declare docs.
