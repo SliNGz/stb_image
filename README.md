@@ -40,6 +40,6 @@ fetch_dependency(example
 * Links project against dependency.
 
 #### Arguments:
-    Every argument acceptable by FetchContent_Declare.
-    For more information, checkout CMake's FetchContent_Declare docs.
+Any argument acceptable by FetchContent_Declare.\
+For more information, checkout CMake's FetchContent_Declare docs.
 
