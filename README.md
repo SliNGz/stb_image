@@ -32,14 +32,14 @@ fetch_dependency(example
                  GIT_TAG [BRANCH])
 ```
 
-## Custom CMake Modules
-### Dependencies.cmake
-#### fetch_dependency
-Actions:
+## Dependencies.cmake
+### fetch_dependency
+#### Actions
 * Fetches a dependency and populates it.
 * Includes dependency's include directory in compilation.
 * Links project against dependency.
 
-Arguments:
-  Every argument acceptable by FetchContent_Declare.
-  For more information, checkout CMake's FetchContent_Declare docs.
+#### Arguments:
+    Every argument acceptable by FetchContent_Declare.
+    For more information, checkout CMake's FetchContent_Declare docs.
+
