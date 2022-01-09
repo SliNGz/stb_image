@@ -1,12 +1,12 @@
-# About
+# Project Template
 C++ multi-purpose project template.
 
-# Setup
+## Setup
 * git remote set-url origin [PROJECT_ORIGIN]
 * Rename any "project_template" occurrence to your project's name.
 * Delete this README.md.
 
-# Structure
+## Structure
 * bin - Generated folder containing output binaries categorized by platform and build type.
 * build - CMake-generated folder containing generated build files.
 * dependencies - Folder containing dependencies-fetching cmake files. On configure, every .cmake file in the folder gets included by the main CMakeLists.txt.
@@ -14,7 +14,6 @@ C++ multi-purpose project template.
 * src - Folder containing source files.
 * tools - Folder containing categorized folders of tools used by the project. For example: tools/cmake is a folder used for storing custom CMake Modules.
 
-# Usage
 ## Dependencies
 ### Adding a dependency
 Create a .cmake file and place it in the "dependencies" folder.
@@ -33,8 +32,8 @@ fetch_dependency(example
                  GIT_TAG [BRANCH])
 ```
 
-# Custom CMake Modules
-## Dependencies.cmake
+## Custom CMake Modules
+### Dependencies.cmake
 ### fetch_dependency
 Actions:
 * Fetches a dependency and populates it.
