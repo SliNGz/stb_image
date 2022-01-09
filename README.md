@@ -11,7 +11,7 @@ C++ multi-purpose project template.
 * build - CMake-generated folder containing generated build files.
 * dependencies - Folder containing dependencies-fetching cmake files. On configure, every .cmake file in the folder gets included by the main CMakeLists.txt.
 * include - Folder containing public headers.
-* src -Folder containing source files.
+* src - Folder containing source files.
 * tools - Folder containing categorized folders of tools used by the project. For example: tools/cmake is a folder used for storing custom CMake Modules.
 
 # Usage
