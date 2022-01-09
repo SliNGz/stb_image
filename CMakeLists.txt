@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(project_template)
+project(stb_image)
 
 # Modules
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/tools/cmake)
@@ -12,7 +12,7 @@ file(GLOB_RECURSE SOURCES
 	 "src/*.cpp")
 
 # Target
-add_executable(${PROJECT_NAME} ${SOURCES})
+add_library(${PROJECT_NAME} STATIC ${SOURCES})
 
 # Flags
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
