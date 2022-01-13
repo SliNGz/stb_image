@@ -2,7 +2,7 @@
 C++ Multi-Purpose Project Template.
 
 ## Setup
-* git remote set-url origin [PROJECT_ORIGIN]
+* Use github's "Use this template" option.
 * Rename any "project_template" occurrence to your project's name.
 * Delete this README.md.
 
