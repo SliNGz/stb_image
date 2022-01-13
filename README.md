@@ -1,5 +1,5 @@
 # Project Template
-C++ multi-purpose project template.
+C++ Multi-Purpose Project Template.
 
 ## Setup
 * git remote set-url origin [PROJECT_ORIGIN]
