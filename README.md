@@ -2,7 +2,7 @@
 C++ Multi-Purpose Project Template.
 
 ## Setup
-* Use github's "Use this template" option.
+* Use GitHub's "Use this template" option.
 * Rename any "project_template" occurrence to your project's name.
 * Delete this README.md.
 
