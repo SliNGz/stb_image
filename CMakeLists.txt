@@ -16,7 +16,7 @@ add_library(${PROJECT_NAME} STATIC ${SOURCES})
 
 # Flags
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
-target_compile_options(${PROJECT_NAME} PRIVATE "-W4")
+include(Flags)
 
 # Binaries output directory
 set(OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/${CMAKE_SYSTEM_NAME}/${CMAKE_BUILD_TYPE})

@@ -1,0 +1,1 @@
+target_compile_options(${PROJECT_NAME} PRIVATE "-Wall;-Wno-missing-braces;-Wno-defaulted-function-deleted")
