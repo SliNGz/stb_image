@@ -39,6 +39,9 @@ build/*
 
 
 ### Visual Studio ###
+# CMake project
+out/*
+
 # User-specific files
 *.rsuser
 *.suo
