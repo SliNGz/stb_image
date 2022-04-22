@@ -27,7 +27,7 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 
 # Include directories
 target_include_directories(${PROJECT_NAME} PRIVATE
-						   ${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME})
+						   ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Dependencies
 set(FETCHCONTENT_QUIET OFF)
