@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 3.14)
 project(project_template)
 
 # Modules
-list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/tools/cmake)
-include(Dependencies)
+set(CMAKE_TOOLS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/tools/cmake)
+include(${CMAKE_TOOLS_DIR}/Dependencies.cmake)
 
 # Sources
 file(GLOB_RECURSE SOURCES
@@ -16,7 +16,7 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 
 # Flags
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
-include(Flags)
+include(${CMAKE_TOOLS_DIR}/Flags.cmake)
 
 # Binaries output directory
 set(OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/${CMAKE_SYSTEM_NAME}/${CMAKE_BUILD_TYPE})
