@@ -1,1 +1,1 @@
-include(flags/compilers/ClangGNU)
+include(${CMAKE_TOOLS_DIR}/flags/compilers/ClangGNU.cmake)
