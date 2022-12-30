@@ -17,10 +17,9 @@ function(fetch_dependency)
 		FetchContent_Populate(${DEPENDENCY_NAME})
 
 		add_subdirectory(${${DEPENDENCY_NAME}_SOURCE_DIR} ${${DEPENDENCY_NAME}_BINARY_DIR})
-
-		target_include_directories(${PROJECT_NAME} PRIVATE
-                                   ${${DEPENDENCY_NAME}_SOURCE_DIR}/include
-                                   ${${DEPENDENCY_NAME}_BINARY_DIR}/include)
-		target_link_libraries(${PROJECT_NAME} ${DEPENDENCY_NAME})
 	endif()
+	target_include_directories(${PROJECT_NAME} PRIVATE
+				   ${${DEPENDENCY_NAME}_SOURCE_DIR}/include
+                                   ${${DEPENDENCY_NAME}_BINARY_DIR}/include)
+	target_link_libraries(${PROJECT_NAME} ${DEPENDENCY_NAME})
 endfunction()
