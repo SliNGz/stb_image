@@ -14,9 +14,7 @@ function(fetch_dependency)
 
 	FetchContent_GetProperties(${DEPENDENCY_NAME})
 	if(NOT ${DEPENDENCY_NAME}_POPULATED)
-		FetchContent_Populate(${DEPENDENCY_NAME})
-
-		add_subdirectory(${${DEPENDENCY_NAME}_SOURCE_DIR} ${${DEPENDENCY_NAME}_BINARY_DIR})
+		FetchContent_MakeAvailable(${DEPENDENCY_NAME})
 	endif()
 	target_include_directories(${PROJECT_NAME} PRIVATE
 							   ${${DEPENDENCY_NAME}_SOURCE_DIR}/include
